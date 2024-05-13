@@ -1,0 +1,59 @@
+\section{Ход работы}
+\subsection{Измерения}
+1. Давление окружающего воздуха 755,5 мм рт. ст.,
+$V_1 = V_2 = V = (420 \pm 10)$ см$^3$
+
+2. Приведем установку в рабочее состояние, как указано в учебном пособии.
+
+3. Проведем измерения для 40, 80, 120 и 150 торр. Так как количество измерений >200, они будут лишь в виде графика.
+
+\begin{figure}[h]
+    \includegraphics*[width = 1.1\linewidth]{p.png}
+\end{figure}
+
+\subsection{Обработка}
+4. Заметим, что все зависимости получились экспоненциальные. Построим зависимости $\ln V(t)$.
+
+\begin{figure}[h]
+    \includegraphics*[width = 0.8\linewidth]{40.png}
+\end{figure}
+\begin{figure}[h]
+    \includegraphics*[width = 0.8\linewidth]{80.png}
+\end{figure}
+\begin{figure}[h]
+    \includegraphics*[width = 0.8\linewidth]{120.png}
+\end{figure}
+\begin{figure}[h]
+    \includegraphics*[width = 0.8\linewidth]{150.png}
+\end{figure}
+
+5. Посчитаем коэффициент наклона для каждого из случаев ($V_0 = 1$ В):
+\begin{center}
+\begin{tabular}[h]{|c|c|c|}
+    \hline
+    $\Delta P$, торр & $\frac{\partial (\ln V/V_0)}{\partial t} \cdot 10^{-4}, \text{ c}^{-1}$ & $\tau$, c \\
+    \hline
+    40 & -47 & 212 \\
+    \hline
+    80 & -84 & 119 \\
+    \hline
+    120 & -16 & 625 \\
+    \hline
+    150 & -14 & 714 \\
+    \hline
+\end{tabular}
+\end{center}
+
+6. По (\ref*{Tau}) определим коэффициент взаимной диффузии:
+\[D_{40} = \frac 1\tau \frac{VL}{2S} = (8,9 \pm 0,1)\cdot 10^{-4}  \text{ }\frac{\text{м}^2}{c},\]
+\[D_{80} = \frac 1\tau \frac{VL}{2S} = (15,9 \pm 0,3\cdot 10^{-4}  \text{ }\frac{\text{м}^2}{c},\]
+\[D_{120} = \frac 1\tau \frac{VL}{2S} = (3,0 \pm 0,1)\cdot 10^{-4} \text{ }\frac{\text{м}^2}{c},\]
+\[D_{150} = \frac 1\tau \frac{VL}{2S} = (2,6 \pm 0,1)\cdot 10^{-4} \text{ }\frac{\text{м}^2}{c}.\]
+
+7. Построим график $D(\frac 1 P)$.
+\begin{figure}[h]
+    \centering
+    \includegraphics*{p1.png}
+\end{figure}
+
+По уравнению находим значение диффузии при атмосферном давлении должно быть $D_\text{атм} = 0,66$ м$^2$/с, что очень близко к табличному.

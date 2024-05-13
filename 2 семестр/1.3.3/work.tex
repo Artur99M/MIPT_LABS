@@ -1,0 +1,179 @@
+\section{Ход работы}
+\subsection{Измерения}
+1. Измерены димаетры труб:
+
+\[d_1 = 3.9 \pm 0.05 \text{ мм},\]
+\[d_2 = 3 \pm 0.1 \text{ мм},\]
+\[d_3 = 5.25 \pm 0.1 \text{ мм}.\]
+
+2. Измерены давление, температура и влажность окружающего воздуха:
+\[P = \text{хз},\]
+\[t = 24\text{ }^\circ \text{C},\]
+\[\varphi = \text{хз}.\]
+
+3. Расчитана $Q_\text{крит} \approx 4 \text{ л/мин}$.
+
+4. Рассмотрена зависимость изменения давления от расхода вохдуха, то есть с постоянной длиной между точками $l = 50$ см и $d = d_1$
+\begin{center}
+\begin{tabular}[h]{|c|c|}
+   \hline
+    $\Delta P$, Па & $Q_\text{ср}$, л/мин\\
+   \hline
+   68,294277 & 3,11 \\
+   \hline
+   84,176667 & 3,764 \\
+   \hline
+   95,29434 & 4,174 \\
+   \hline
+   111,17673 & 4,78 \\
+   \hline
+   127,05912 & 5,242 \\
+   \hline
+   144,529749 & 5,445 \\
+   \hline
+   162,000378 & 5,728 \\
+   \hline
+   176,294529 & 5,924 \\
+   \hline
+   222,35346 & 6,582 \\
+   \hline
+   49,235409 & 2,275 \\
+   \hline
+   55,588365 & 2,464 \\
+   \hline
+   31,76478 & 1,436 \\
+   \hline
+   103,235535 & 4,48 \\
+   \hline
+   76,235472 & 3,345 \\
+   \hline
+   61,941321 & 2,768 \\
+   \hline
+\end{tabular}
+\end{center}
+
+5. Аналогичная зависимость рассмотрена для $d = 5,25$ мм и $l = 50$ см.
+\begin{center}
+\begin{tabular}[h]{|c|c|}
+   \hline
+    $\Delta P$, Па & $Q_\text{ср}$, л/мин\\
+   \hline
+    39,705975 & 5,728 \\
+    \hline
+    47,64717 & 6,94 \\
+    \hline
+    55,588365 & 7,486 \\
+    \hline
+    71,470755 & 7,991 \\
+    \hline
+    79,41195 & 8,334 \\
+    \hline
+    87,353145 & 8,55 \\
+    \hline
+    95,29434 & 8,787 \\
+    \hline
+    111,17673 & 9,41 \\
+    \hline
+    119,117925 & 9,744 \\
+    \hline
+\end{tabular}
+\end{center}
+
+6. Теперь изменялись давление и длина при расходе $Q_\text{ср} = 3,336$ л/мин на трубе 3,9 мм.
+\begin{center}
+\begin{tabular}[h]{|c|c|}
+    \hline
+    $\Delta P$, Па & $l$, см \\
+    \hline
+    128,647359 & 90 \\
+   \hline
+   76,235472 & 50 \\
+   \hline
+   182,647485 & 120 \\
+   \hline
+   106,412013 & 70 \\
+   \hline
+   46,058931 & 30 \\
+   \hline
+\end{tabular}
+\end{center}
+
+7. Аналогичные измерения проведены для трубы 5,25 мм и $Q = 4,5$ л/мин.
+\begin{center}
+\begin{tabular}[h]{|c|c|}
+    \hline
+    $\Delta P$, Па & $l$, см \\
+    \hline
+    57,176604 & 90 \\
+    \hline
+    77,823711 & 120 \\
+    \hline
+    47,64717 & 70 \\
+    \hline
+    27,000063 & 40 \\
+    \hline
+    20,647107 & 30 \\
+    \hline
+\end{tabular}
+\end{center}
+
+8. Проведены измерения для выявления зависимости $Q(d)$. При этом $\Delta P \approx 31,77$ Па, $l = 40$ см.
+\begin{center}
+\begin{tabular}[h]{|c|c|}
+    \hline
+    $d$, мм & $Q$, л/мин \\
+    \hline
+    5,25 & 5,31 \\
+    \hline
+    3,9 & 1,751 \\
+    \hline
+    3 & 1,536 \\
+    \hline
+\end{tabular}
+\end{center}
+
+\subsection{Обработка}
+
+9. Построены графики зависимости для п. 4 и 5:
+\begin{figure*}[h]
+    \centering
+    \includegraphics*[width = 0.8\linewidth]{p1.png}
+\end{figure*}
+
+\begin{figure*}[h]
+    \centering
+    \includegraphics*[width = 0.8\linewidth]{p2.png}
+\end{figure*}
+
+Получились уравнения для каждого из случаев (ламинарное течение):
+\[Q_1 = 0,0431\Delta P + 0,0101,\]
+\[Q_2 = 0,147\Delta P - 0,1261.\]
+
+Получилось
+\[\frac{\partial Q_1}{\partial (\Delta P)} = (431 \pm 7) \cdot 10^{-7} \text{ } \frac{\text{м}^3}{\text{Па}\cdot\text{мин}},\]
+\[\frac{\partial Q_2}{\partial (\Delta P)} = (144 \pm 3) \cdot 10^{-6} \text{ } \frac{\text{м}^3}{\text{Па}\cdot\text{мин}}.\]
+
+10. По формуле (\ref*{equ:puaz}) посчитаем значения коэффициента динамической вязкости:
+\[\eta_1 = (1,6 \pm 0,3) \cdot 10^{-5} \text{ Па}\cdot c,\]
+\[\eta_2 = (1,6 \pm 0,5) \cdot 10^{-5} \text{ Па}\cdot c.\]
+
+11. Построены графики зависмости для п. 6 и 7.
+\begin{figure*}[h]
+    \centering
+    \includegraphics*[width = 0.8\linewidth]{p3.png}
+\end{figure*}
+\begin{figure*}[h]
+    \centering
+    \includegraphics*[width = 0.8\linewidth]{p4.png}
+\end{figure*}
+
+Получились уравнения
+\[l_1 = 0,6692\Delta P - 0,2698,\]
+\[l_2 = 1,5852\Delta P - 3,0118.\]
+
+Получилось
+\[\frac{\partial l_1}{\partial (\Delta P)} = (67 \pm 1) \cdot 10^{-4} \text{ } \frac{\text{м}}{\text{Па}},\]
+\[\frac{\partial l_2}{\partial (\Delta P)} = (158 \pm 2) \cdot 10^{-5} \text{ } \frac{\text{м}}{\text{Па}}.\]
+
+12. По результатам п. 8 измерен коэффициент наклона $\ln Q(\ln R)$. Измерения на $d_1$ не учитывалось, так как там было турбулентное течение.
+\[\frac{\partial (\ln Q)}{\partial (\ln R)} = 0,5 \text{ }\frac{\text{л}\cdot\text{мм}}{\text{мин}}\]
