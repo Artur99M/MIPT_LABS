@@ -8,7 +8,7 @@
 
 % \tableofcontents
 
-\newpage
+% \newpage
 
 \input{intro}
 
@@ -16,6 +16,50 @@
 
 \input{ending}
 
-\include{matlab}
+\newpage
+\section*{Приложение}
 
+\begin{figure}
+    \centering
+    \includegraphics*[width = 0.9\linewidth]{T(t).png}
+    \label{fig:Tt}
+    \caption{Зависимость температуры от времени}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.9\linewidth]{down_empty.png}
+    \label{fig:d_empty}
+    \caption{$T_{cool}(t)$ для пустого каллориметра}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width = \linewidth]{up_empty.png}
+    \label{fig:u_empty}
+    \caption{$T_{heat}(t)$ для пустого каллориметра}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.9\linewidth]{down_iron.png}
+    \label{fig:d_iron}
+    \caption{$T_{cool}(t)$ для железа}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.9\linewidth]{down_copper.png}
+    \label{fig:d_copper}
+    \caption{$T_{cool}(t)$ для меди}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.9\linewidth]{up_iron.jpg}
+    \label{fig:u_iron}
+    \caption{$T_{heat}(t)$ для железа}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.9\linewidth]{up_copper.jpg}
+    \label{fig:u_copper}
+    \caption{$T_{heat}(t)$ для меди}
+\end{figure}
+\include{matlab}
 \end{document}

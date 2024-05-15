@@ -7,5 +7,52 @@
     m_\text{железо} = 814.8 \pm 0.5 \text{ г}.
 \end{align*}
 
-2. График для изменения напряжения представлен в приложении
+2. График для изменения температуры в каллориметре представлен в приложении на рис. 1.%\ref{fig:Vt}
+(По нему можно сопоставить нужные моменты времени)
+
 \subsection{Обработка}
+
+3. Для случая охлаждения построим график в осях $\ln\frac{T_{cool} - T_K}{T - T_K}$, $t$ для пустого каллориметра. В приложении на рис. 2. %\ref{fig:d_empty}
+В таком случае получилось $\frac \lambda C = (30 \pm 5) \cdot 10^{-5} \text{ с}^{-1}$.
+
+4. Из уравнения (\ref{T_heat_t}) ясно, что $\lambda$ можно найти по углу наклона прямой $T_{heat}\left(P(1 - e^{- \frac{\lambda}{C} t})\right)$ (рис. 3). Из этой формулы $\lambda = \frac{1}{k}$.
+
+5. Получим окончательные выражения:
+\begin{align*}
+    \lambda = 0.22 \pm 0.04 \text{ }\frac{\text{Дж}}{\text{К}\cdot\text{с}}, \\
+    C_\text{кал} = 0.75 \pm 0.18 \text{ }\frac{\text{кДж}}{\text{К}}.
+\end{align*}
+
+6. Аналогично для железа:
+\begin{align*}
+    \frac \lambda C = (20 \pm 4) \cdot 10^{-5} \text{ с}^{-1}, \\
+    \lambda = (0.23 \pm 0.05) \text{ }\frac{\text{Дж}}{\text{К}\cdot\text{с}}, \\
+    C = 1 \pm 0.3  \text{ }\frac{\text{кДж}}{\text{К}}, \\
+    c_\text{железо} = \frac{C - C_\text{кал}}{m_\text{железо}} = 0.6 \pm 0.3 \text{ } \frac{\text{кДж}}{\text{кг}}. \\
+\end{align*}
+
+7. Аналогично для меди:
+\begin{align*}
+    \frac \lambda C = (20 \pm 3) \cdot 10^{-5} \text{ с}^{-1}, \\
+    \lambda = (0.20 \pm 0.04) \text{ }\frac{\text{Дж}}{\text{К}\cdot\text{с}}, \\
+    C = 1.0 \pm 0.2  \text{ }\frac{\text{кДж}}{\text{К}}, \\
+    c_\text{медь} = \frac{C - C_\text{кал}}{m_\text{медь}} = 0.4 \pm 0.2 \text{ } \frac{\text{кДж}}{\text{кг}}. \\
+\end{align*}
+
+8. Теплоемкость калориметра дифферинциальным методом по формуле (16):
+\begin{align*}
+    C_\text{каллориметр} = 0.627 \pm 0.2 \text{ } \frac{\text{кДж}}{\text{К}} \\
+\end{align*}
+
+9. Аналогично для железа:
+\begin{align*}
+    C = \frac{27.2 \cdot 0.226}{0.01} = 0.614 \pm 0.2 \text{ } \frac{\text{кДж}}{\text{К}} \\
+    c_\text{железо} = \frac{C - C_\text{каллориметр}}{m_\text{железо}} < 0,
+\end{align*}
+
+10. Аналогично для меди:
+\begin{align*}
+    C = \frac{27.2 \cdot 0.226}{0.0098} = 0.6 \pm 0.2 \text{ } \frac{\text{кДж}}{\text{К}} \\
+    c_\text{медь} = \frac{C - C_\text{каллориметр}}{m_\text{медь}} = 0.0 \pm 0.3 ~\frac{\text{кДж}}{\text{кг}\cdot\text{К}}
+\end{align*}
+поэтому в данной ситуации посчитано неправильно.
